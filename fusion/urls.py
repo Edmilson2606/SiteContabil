@@ -23,3 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('core.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+admin.site.site_header = 'Aécia Contabilidade'
+admin.site.site_title = 'Contabilidade e Consultoria'
+admin.site.index_title = 'Contabilidade e Consultoria'
